@@ -56,7 +56,7 @@
 ![IP Info](ip.png)
 
 ### News
-![News](./screenshots/news.png)
+![News](news.png)
 
 ### Wikipedia Search
 ![Wiki](./screenshots/wiki.png)
