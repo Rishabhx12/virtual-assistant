@@ -59,7 +59,7 @@
 ![News](news.png)
 
 ### Wikipedia Search
-![Wiki](./screenshots/wiki.png)
+![Wiki](wiki.png)
 
 ### Emotion Analysis
 ![Emotion](emotion.png)
