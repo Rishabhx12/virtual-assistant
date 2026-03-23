@@ -53,7 +53,7 @@
 ![Facts](facts.png)
 
 ### IP Address Info
-![IP Info](./screenshots/ip.png)
+![IP Info](ip.png)
 
 ### News
 ![News](./screenshots/news.png)
