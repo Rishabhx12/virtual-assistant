@@ -50,7 +50,7 @@
 ![Temperature](./screenshots/temp.png)
 
 ### Random Facts
-![Facts](./screenshots/facts.png)
+![Facts](facts.png)
 
 ### IP Address Info
 ![IP Info](./screenshots/ip.png)
