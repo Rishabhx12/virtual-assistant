@@ -1,62 +1,153 @@
-PyVA is a sophisticated virtual assistant developed using Python, designed to handle a wide range of tasks and even conduct sentiment analysis. This powerful tool leverages Python's rich ecosystem of libraries and frameworks to provide a comprehensive user experience.
+# 🤖 PyVA — Virtual Assistant & Emotional Analyzer
 
-Core functionalities of PyVA include:
+> A Python-powered voice-command virtual assistant with real-time facial emotion recognition, NLP, and automated reporting.
 
-Natural Language Processing (NLP): PyVA can understand and respond to user queries in a natural, conversational manner. It employs NLP techniques to process and interpret user input effectively.
-Task Automation: Users can delegate routine tasks to PyVA, such as setting reminders, sending emails, or scheduling appointments. The assistant automates these processes efficiently, saving time and effort.
-Information Retrieval: PyVA can search the web for relevant information and provide concise summaries. It leverages search engines and data extraction techniques to deliver accurate and informative responses.
-Sentiment Analysis: A unique feature of PyVA is its ability to analyze the sentiment expressed in user text. By identifying positive, negative, or neutral emotions, the assistant can tailor its responses and provide more personalized assistance.
-Key Python libraries used in PyVA development:
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![DeepFace](https://img.shields.io/badge/DeepFace-4B0082?style=flat-square)
+![NLTK](https://img.shields.io/badge/NLTK-76B900?style=flat-square)
+![SpaCy](https://img.shields.io/badge/SpaCy-09A3D5?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-NLTK: Natural Language Toolkit for text processing and analysis.
-SpaCy: A modern NLP library for tasks like tokenization, part-of-speech tagging, and named entity recognition.
-TensorFlow or PyTorch: Deep learning frameworks for building complex models for sentiment analysis.
-Requests: For making HTTP requests to fetch data from the web.
-Beautiful Soup: For parsing HTML and extracting information from web pages.
-PyVA's versatility and ability to perform sentiment analysis make it a valuable tool for both personal and professional use. Its Python-based architecture ensures flexibility and extensibility, allowing for continuous improvement and customization.
-                        
-                         Output
-The output of the code presented above for the project is as follows:
+---
 
-1.	For Temperature Information
- 
+## 📌 Overview
 
-    ![temp](https://github.com/user-attachments/assets/83ad3aa8-6664-485c-9957-12449f92454e)
+**PyVA** is a sophisticated virtual assistant built entirely in Python. It listens to voice commands, understands natural language, retrieves real-time information, and uniquely — analyzes your facial emotions via webcam using DeepFace and TensorFlow, then sends automated email reports summarizing the session.
 
+---
 
-2.	For Random Facts
- 
-![facts](https://github.com/user-attachments/assets/d07bff27-7e0d-47b6-b439-5d357e4a64c2)
+## ✨ Features
 
+| Feature | Description |
+|---|---|
+| 🗣️ **Voice Commands** | Speak naturally; PyVA understands and responds |
+| 🧠 **NLP Processing** | Powered by NLTK & SpaCy for intent understanding |
+| 😀 **Emotion Recognition** | Real-time facial emotion analysis via webcam using DeepFace |
+| 🌤️ **Weather Info** | Fetches live temperature and weather data |
+| 📰 **News Retrieval** | Gets latest headlines on demand |
+| 🌐 **Wikipedia Search** | Answers knowledge queries instantly |
+| 🌍 **IP Info** | Retrieves network/location information |
+| 📧 **Automated Email Reports** | Sends session summaries via email |
+| 💡 **Random Facts** | Delivers interesting facts on command |
 
+---
 
+## 🛠️ Tech Stack
 
+- **Core Language**: Python 3.x
+- **Emotion Recognition**: DeepFace, TensorFlow / PyTorch
+- **NLP**: NLTK, SpaCy
+- **Web Data**: Requests, BeautifulSoup
+- **Voice**: SpeechRecognition, pyttsx3
+- **Email**: smtplib
 
+---
 
+## 📸 Screenshots
 
+### Temperature Information
+![Temperature](./screenshots/temp.png)
 
+### Random Facts
+![Facts](./screenshots/facts.png)
 
+### IP Address Info
+![IP Info](./screenshots/ip.png)
 
+### News
+![News](./screenshots/news.png)
 
-3.	For IP Address Information
+### Wikipedia Search
+![Wiki](./screenshots/wiki.png)
 
- ![ip](https://github.com/user-attachments/assets/94993022-f6f0-4f17-a645-d5f5752d1382)
+### Emotion Analysis
+![Emotion](./screenshots/emotion.png)
 
+---
 
+## ⚙️ Installation & Setup
 
+### Prerequisites
+- Python 3.8+
+- Webcam (for emotion recognition)
+- Microphone (for voice commands)
 
-4.	For News
+### 1. Clone the repository
+```bash
+git clone https://github.com/Rishabhx12/virtual-assistant.git
+cd virtual-assistant
+```
 
- ![news](https://github.com/user-attachments/assets/a895e568-32b6-4216-95db-0c4f36f00025)
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
 
+### 3. Configure email (for automated reports)
+Open `virtualAssitant.py` and update:
+```python
+EMAIL = "your_email@gmail.com"
+PASSWORD = "your_app_password"  # Use Gmail App Password
+```
 
+### 4. Run the assistant
+```bash
+python virtualAssitant.py
+```
 
+---
 
-5.	For Wikipedia Search 
+## 📦 Requirements
 
- ![wiki](https://github.com/user-attachments/assets/864aa5d5-ff61-4c53-92ba-039c92ed6668)
+```
+tensorflow
+deepface
+nltk
+spacy
+speechrecognition
+pyttsx3
+requests
+beautifulsoup4
+opencv-python
+```
 
-6.	For Emotional Analysis
-            
-![emotion](https://github.com/user-attachments/assets/239f1e5b-9f25-406d-a223-62442e4fd3b0)
+> Install all at once: `pip install -r requirements.txt`
 
+---
+
+## 🗣️ Example Commands
+
+```
+"What's the weather today?"
+"Tell me a random fact"
+"Search Wikipedia for machine learning"
+"What's my IP address?"
+"Get me the latest news"
+"Analyze my emotion"
+```
+
+---
+
+## 🔮 Future Improvements
+
+- [ ] Web dashboard for emotion history visualization
+- [ ] Multi-language support
+- [ ] Integration with Google Calendar
+- [ ] Mobile app interface
+- [ ] GPT-based conversational responses
+
+---
+
+## 👤 Author
+
+**Rishabh Singh**
+- LinkedIn: [rishabh-singh-40136821a](https://www.linkedin.com/in/rishabh-singh-40136821a/)
+- Email: rishusingh1958@gmail.com
+- GitHub: [@Rishabhx12](https://github.com/Rishabhx12)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
