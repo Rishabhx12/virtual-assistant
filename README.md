@@ -62,7 +62,7 @@
 ![Wiki](./screenshots/wiki.png)
 
 ### Emotion Analysis
-![Emotion](./screenshots/emotion.png)
+![Emotion](emotion.png)
 
 ---
 
